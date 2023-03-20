@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+    <script>
+        // 내부 스크립트
+        // 변수의 선언
+        // var 그릇 // 빈 저장소
+        // var 그릇 = 쌀밥 // 데이터 대입
+        // var 그릇 = 콩밥 // 데이터 변경
+        /* var box1 = 10;  *//* 대입 */
+        /* window.alert(box1)  *//* 출력 */
+        //객체.속성
+        //객체.메소드() 뭔가를 실행한다. 라고 할 때 메소드라고 부름. 메소드를 실행 대상으로 사용할 수 있다.
+
+        var box1 //변수생성
+        var box2 = 1 // 생성, 대입을 동시에
+        console.log(box1) //undefined
+        box1 = 10
+        box2 = box1 /* = ->우측의 값을 좌측의 값에 대입한다는 뜻 오른쪽에서 왼쪽으로 읽는다.*/
+        console.log(box1) // 10
+        box1 = 20
+        console.log(box1) // 20
+        console.log(box1, box2)
+
+        console.log(typeof box1) /* 데이터 값이 뭔지 알려주는 것, typeof 뒤에 ~~ */
+        console.log(typeof box2)
+
+        var box3 = 'A' /* 문자는 따옴표에 묶어야지 만 인식함 */
+        console.log(typeof box3)
+        console.log(typeof box1+1) // 20+1이라고 인식
+        console.log(typeof box3+1) // 'A' + 1이라고 인식
+
+        var box4 = '아이디를 입력하세요' /* 문자는 반드시 따옴표에 */
+        console.log(box4.length) /* 글자 수를 알고 싶을 때(공백포함), 이때는 전체가 속성 */
+
+        var a = 1
+        var b = a
+        var c = a + b + c //지금의 c는 정의되지 않은 상태, undefined, 1 + 1 + c인데 인식 못함
+        console.log(a, b, c) // c는 NaN으로 뜸, 숫자가 아니라서 not a number의 약자. 1, 1, NaN
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
